@@ -1,6 +1,16 @@
 /******************************************
     Base Styles
 ******************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
 
 
 /******************************************
@@ -15,4 +25,11 @@
     top: 0;
     left: 0;
     display: none;
+    text-align: center;
+}
+
+#lightbox img {
+    width: 60%;
+    height: 60%;
+    margin-top: 10%
 }

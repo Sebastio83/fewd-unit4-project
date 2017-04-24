@@ -13,6 +13,12 @@ $("#gallery a").click(function(event){
     $lightbox.show();
 });
 
+// Hide lightbox when clicked
+
+    $lightbox.click(function() {
+        $lightbox.hide();
+    });
+
 
 
 

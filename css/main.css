@@ -2,34 +2,73 @@
     Base Styles
 ******************************************/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+/* center content */
+
+#wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+ul {
+  text-align: center;
+}
+
+/* search box */
+
+fieldset {
+border: none;
+margin: 1em auto;
+width: 35%;
+}
+
+fieldset input {
+  font-size: 16pt;
+  width: 100%
+}
+
+/* list styles */
 
 ul li {
     list-style-type: none;
-    display: inline-block;
+    padding: 1em 0;
 }
 
+ul li p {
+  display: none;
+}
+
+/******************************************
+    Media Queries
+******************************************/
+
+@media (min-width: 520px) {
+  ul li {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 2%;
+  }
+}
 
 /******************************************
     Light Box
 ******************************************/
 
-#lightbox {
-    background: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    text-align: center;
+.lv_title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 1em;
 }
 
-#lightbox img {
-    width: 60%;
-    height: 60%;
-    margin-top: 10%
+.lv_caption {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.lv-overlay {
+  background-color: tomato;
 }
